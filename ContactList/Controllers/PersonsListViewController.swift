@@ -15,7 +15,7 @@ final class PersonsListViewController: UITableViewController {
 }
 
     
-//MARK: - - UITableViewDataSource
+//MARK: - UITableViewDataSource
 extension PersonsListViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 2
@@ -30,8 +30,6 @@ extension PersonsListViewController {
         return personList[section].fullName
         
     }
-    
-    
     
     
     
@@ -66,50 +64,3 @@ extension PersonsListViewController {
 }
     
    
-        
-        /*
-        if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PersonsPhoneCell", for: indexPath)
-            cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-                
-            let people = personList[indexPath.row]
-                
-            var content = cell.defaultContentConfiguration()
-            content.text = people.phone
-            content.image = UIImage(systemName: "phone.fill")
-                
-            cell.contentConfiguration = content
-            return cell
-        } else {
-            let cellTwo = tableView.dequeueReusableCell(withIdentifier: "PersonsEmailCell", for: indexPath)
-            cellTwo.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-                
-            let people = personList[indexPath.row]
-                
-            var content = cellTwo.defaultContentConfiguration()
-            content.text = people.email
-            content.image = UIImage(systemName: "phone.fill")
-                
-            cellTwo.contentConfiguration = content
-            return cellTwo
-        }
-        
-            */
-        
-        /*
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PersonsPhoneCell", for: indexPath)
-            
-            
-        cell.textLabel?.text = "Section \(indexPath.section) Row \(indexPath.row)"
-            
-        let people = personList[indexPath.row]
-            
-        var content = cell.defaultContentConfiguration()
-        content.secondaryText = people.phone
-        content.image = UIImage(systemName: "phone.fill")
-            
-        cell.contentConfiguration = content
-        return cell
-            */
-
-

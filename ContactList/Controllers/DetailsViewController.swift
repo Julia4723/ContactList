@@ -21,9 +21,6 @@ final class DetailsViewController: UIViewController {
         phone.text = "Телефон: \(person.phone)"
         email.text = "Почта: \(person.email)"
     
-
     }
-    
-
 
 }

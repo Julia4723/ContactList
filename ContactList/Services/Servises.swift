@@ -6,7 +6,6 @@
 //
 
 
-//Здесь логики не должно быть
 final class DataStore {
     static let shareData = DataStore()
     
